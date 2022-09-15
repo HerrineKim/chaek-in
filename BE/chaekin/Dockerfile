@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-WORKDIR /var/jenkins_home/workspace/chaekin/chaekin_back
+WORKDIR /var/jenkins_home/workspace/chaekin/BE
 
 EXPOSE 8080
 
