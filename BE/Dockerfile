@@ -1,10 +1,10 @@
 FROM openjdk:11
 
-WORKDIR /var/jenkins_home/workspace/chaekin-deploy/BE/
+WORKDIR /var/jenkins_home/workspace/chaekin-deploy/BE
 
 EXPOSE 8080
 
-ARG JAR_FILE=build/libs/chaekin-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=/build/libs/chaekin-0.0.1-SNAPSHOT.jar
 
 COPY ${JAR_FILE} app.jar
 
