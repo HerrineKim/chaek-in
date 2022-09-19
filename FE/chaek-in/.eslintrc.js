@@ -8,7 +8,10 @@ module.exports = {
     'plugin:react/recommended',
     'standard-with-typescript',
     'eslint:recommended',
-    'plugin:react-hooks/recommended'
+    'plugin:react-hooks/recommended',
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
     // 'plugin:@typescript-eslint/eslint-recommended',
     // 'plugin:@typescript-eslint/recommended',
     // 'plugin:@typescript-eslint/recommended-requiring-type-checking'
@@ -17,9 +20,13 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      "jsx": true
+    }
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint'],
+  parser: "@typescript-eslint/parser",
+  plugins: ['react', 'react-hooks', '@typescript-eslint', "import"],
   rules: {
     indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single', { avoidEscape: true }],
@@ -33,6 +40,12 @@ module.exports = {
   settings: {
     react: {
       version: 'detect'
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx", ".js"] 
+    }, 
+    "import/resolver": { 
+      "typescript": "./tsconfig.json" 
     }
   }
 }
