@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-function RecommendScreen() {
+function ReadScreen() {
   return (
     <View style={styles.container}>
-      <Text>추천</Text>
+      <Text>ReadScreen</Text>
     </View>
   );
 }
@@ -16,4 +16,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default RecommendScreen;
+export default ReadScreen;

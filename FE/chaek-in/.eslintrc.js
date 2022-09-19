@@ -27,7 +27,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['react', 'react-hooks', '@typescript-eslint', 'import'],
   rules: {
-    indent: ['error', 2, { SwitchCase: 1 }],
+    // indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single', { avoidEscape: true }],
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'off',
