@@ -25,7 +25,7 @@ function RecordScreen({ navigation }) {
       </TopContainer>
       <ScrollViewContainer>
         <RecordView onPress={goToRecordDetail} title='RecordDetail'>
-          <Text>독후감들</Text>
+          <TestText>독후감들</TestText>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -108,6 +108,10 @@ const WriteButton = styled.TouchableOpacity`
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
+`;
+
+const TestText = styled.Text`
+  font-size: 40px;
 `;
 
 export default RecordScreen;
