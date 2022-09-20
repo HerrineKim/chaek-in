@@ -26,6 +26,7 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks'],
   rules: {
+    'no-unused-vars': 'off',
     // indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single', { avoidEscape: true }],
     'no-empty-function': 'off',
@@ -39,11 +40,11 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx', '.js'],
-    },
-    'import/resolver': {
-      typescript: './tsconfig.json',
-    },
+    // 'import/parsers': {
+    //   '@typescript-eslint/parser': ['.ts', '.tsx', '.js'],
+    // },
+    // 'import/resolver': {
+    //   typescript: './tsconfig.json',
+    // },
   },
 };

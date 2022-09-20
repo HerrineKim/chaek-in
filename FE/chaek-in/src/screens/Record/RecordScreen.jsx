@@ -1,8 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
-// import { Button } from '@ant-design/react-native';
 import styled from 'styled-components/native';
 
-function RecordScreen() {
+function RecordScreen({ navigation }) {
+  const goToRecordCreate = (e) => {
+    navigation.navigate('RecordCreate');
+  };
   return (
     <View style={styles.container}>
       <TopContainer>
@@ -48,7 +50,7 @@ function RecordScreen() {
           </Text>
         </RecordView>
       </ScrollViewContainer>
-      <WriteButton>
+      <WriteButton onPress={goToRecordCreate} title='RecordCreate'>
         <Text>작성</Text>
       </WriteButton>
     </View>
@@ -84,7 +86,7 @@ const ScrollViewContainer = styled.ScrollView`
   flex: 7;
 `;
 
-const RecordView = styled.View`
+const RecordView = styled.TouchableOpacity`
   background-color: #f2d8a7;
   border-radius: 15px;
   padding: 15px;
