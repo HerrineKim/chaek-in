@@ -24,13 +24,12 @@ module.exports = {
       jsx: true,
     },
   },
-  parser: '@typescript-eslint/parser',
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'import'],
+  plugins: ['react', 'react-hooks'],
   rules: {
     // indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single', { avoidEscape: true }],
     'no-empty-function': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
+    // '@typescript-eslint/no-empty-function': 'off',
     'react/display-name': 'off',
     'react/prop-types': 'off',
     // suppress errors for missing 'import React' in files
