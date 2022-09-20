@@ -1,10 +1,13 @@
 import React from 'react';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import HomeScreen from "../screens/HomeScreen";
 import RecommendScreen from '../screens/RecommendScreen';
 import MeetingScreen from '../screens/MeetingScreen';
-import HomeNavigation from './HomeNavigation';
+import RecordScreen from '../screens/RecordScreen';
 import ReadScreen from '../screens/ReadScreen';
-import RecordNavigation from './RecordNavigation';
+import HomeNavigation from './HomeNavigation';
 
 const Tab = createBottomTabNavigator();
 
@@ -16,7 +19,7 @@ function TabNavigation() {
       <Tab.Screen name='Recommend' component={RecommendScreen} />
       <Tab.Screen name='Read' component={ReadScreen} />
       <Tab.Screen name='Meeting' component={MeetingScreen} />
-      <Tab.Screen name='Record' component={RecordNavigation} />
+      <Tab.Screen name='Record' component={RecordScreen} />
     </Tab.Navigator>
     // </NavigationContainer>
   );
