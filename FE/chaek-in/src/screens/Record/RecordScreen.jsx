@@ -5,6 +5,11 @@ function RecordScreen({ navigation }) {
   const goToRecordCreate = (e) => {
     navigation.navigate('RecordCreate');
   };
+
+  const goToRecordDetail = (e) => {
+    navigation.navigate('RecordDetail');
+  };
+
   return (
     <View style={styles.container}>
       <TopContainer>
@@ -19,7 +24,7 @@ function RecordScreen({ navigation }) {
         </ButtonContainer>
       </TopContainer>
       <ScrollViewContainer>
-        <RecordView>
+        <RecordView onPress={goToRecordDetail} title='RecordDetail'>
           <Text>독후감들</Text>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
