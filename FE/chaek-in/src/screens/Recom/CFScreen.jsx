@@ -1,11 +1,11 @@
-import {StyleSheet, Text, View} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-function RecommendScreen () {
+function CFScreen() {
   return (
     <View style={styles.container}>
       <Text>추천</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  }
-})
+  },
+});
 
-export default RecommendScreen;
+export default CFScreen;

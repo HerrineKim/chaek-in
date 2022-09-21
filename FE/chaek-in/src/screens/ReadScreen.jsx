@@ -1,11 +1,11 @@
-import {StyleSheet, Text, View} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-function ReadScreen () {
+function ReadScreen() {
   return (
     <View style={styles.container}>
-      <Text>책 읽기</Text>
+      <Text>ReadScreen</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  }
-})
+  },
+});
 
 export default ReadScreen;
