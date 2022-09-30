@@ -15,12 +15,7 @@
       "fallbackToCacheTimeout": 0
     },
     "plugins": [
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "The app accesses your photos to let you share them with your friends."
-        }
-      ]
+      "@react-native-google-signin/google-signin"
     ],
     "assetBundlePatterns": [
       "**/*"
@@ -29,15 +24,21 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.chaek_in"
+      "package": "com.a107.chaekin"
     },
     "web": {
       "favicon": ""
     },
-    "scheme": "chaek-in"
+    "scheme": "chaek-in",
+    "extra": {
+      "eas": {
+        "projectId": "6a6e7618-4571-469b-9d78-2fb8073e950e"
+      }
+    }
   }
 }
