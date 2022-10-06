@@ -54,12 +54,13 @@ function RecordScreen({ route, navigation }) {
             <MemoText>{memo.content}</MemoText>
           </RecordView>
         ))}
+        <BlankContainer></BlankContainer>
       </ScrollViewContainer>
       <WriteButton onPress={goToRecordCreate} title='RecordCreate'>
-        <Text>작성</Text>
+        <ButtonText>작성</ButtonText>
       </WriteButton>
       <OCRButton onPress={goToOCR} title='OCR'>
-        <Text>카메라</Text>
+        <ButtonText>카메라</ButtonText>
       </OCRButton>
     </View>
   );
@@ -68,6 +69,7 @@ function RecordScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fcf9f0',
     // justifyContent: 'center',
     // alignItems: 'center',
   },
@@ -88,9 +90,8 @@ const TitleText = styled.Text`
 `;
 
 const MemoText = styled.Text`
-font-size: 15px
-font-family: Light
-
+  font-size: 15px;
+  font-family: Light;
 `;
 
 const ButtonContainer = styled.TouchableOpacity`
@@ -102,8 +103,18 @@ const ButtonContainer = styled.TouchableOpacity`
   color: navy;
 `;
 
+const ButtonText = styled.Text`
+  font-size: 15px;
+  font-family: Light;
+`;
+
 const ScrollViewContainer = styled.ScrollView`
   flex: 7;
+  background-color: #fcf9f0;
+`;
+
+const BlankContainer = styled.View`
+  height: 200px;
 `;
 
 const RecordView = styled.TouchableOpacity`
@@ -123,6 +134,7 @@ const WriteButton = styled.TouchableOpacity`
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
+  border: 1px solid #000;
 `;
 
 const OCRButton = styled.TouchableOpacity`
@@ -135,6 +147,7 @@ const OCRButton = styled.TouchableOpacity`
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
+  border: 1px solid #000;
 `;
 
 const TestText = styled.Text`
